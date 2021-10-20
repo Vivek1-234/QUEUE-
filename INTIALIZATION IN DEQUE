@@ -1,0 +1,45 @@
+//  program of the intialiation of the deque ------->>>>>>>
+//  in this we can use the deque->>>>>>>>
+
+//   the special thing in this we can push in deque --->>>>  in the  front and the back  -->>>>>
+//  similarly  in this we can pop in deque ----->>>>>>  fromt the  front and the back ---->>>>>
+
+
+#include<iostream>
+#include<deque>
+using namespace std;
+
+int main(){
+deque<int> dq;
+//  this will work on the order of the (FIFO) = first in first out --------->>>>>>>>>>>
+
+//  push in the back   -------->>>>>>>>>>
+
+dq.push_back(1);
+dq.push_back(2);
+dq.push_back(3);
+dq.push_back(3);
+
+// push in the front ------->>>>>>>>>
+
+dq.push_front(4);
+dq.push_front(5);
+dq.push_front(5);
+
+
+//   pop from the back ------>>>>>>>>>> 
+
+dq.pop_back();
+dq.pop_back();
+
+//  push from the front ---->>>>>>>>>
+
+dq.pop_front();
+dq.pop_front();
+
+
+for(auto  i : dq ){
+    cout<<i<<endl;
+}
+return 0;
+ }
